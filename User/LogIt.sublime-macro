@@ -1,0 +1,129 @@
+[
+	{
+		"args": null,
+		"command": "exit_visual_mode"
+	},
+	{
+		"args":
+		{
+			"commands":
+			[
+				[
+					"run_macro_file",
+					{
+						"file": "Packages/Default/Add Line.sublime-macro",
+						"register": "\""
+					}
+				],
+				[
+					"insert",
+					{
+						"characters": "logging."
+					}
+				],
+				[
+					"insert",
+					{
+						"characters": "info"
+					}
+				],
+				[
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					}
+				],
+				[
+					"move",
+					{
+						"by": "characters",
+						"forward": true
+					}
+				],
+				[
+					"move",
+					{
+						"by": "characters",
+						"forward": false
+					}
+				],
+				[
+					"insert_snippet",
+					{
+						"contents": "\"$0\""
+					}
+				],
+				[
+					"insert",
+					{
+						"characters": "%s"
+					}
+				],
+				[
+					"move",
+					{
+						"by": "characters",
+						"forward": false
+					}
+				],
+				[
+					"move",
+					{
+						"by": "characters",
+						"forward": false
+					}
+				],
+				[
+					"insert",
+					{
+						"characters": ":"
+					}
+				],
+				[
+					"move",
+					{
+						"by": "characters",
+						"forward": false
+					}
+				],
+				[
+					"paste",
+					null
+				],
+				[
+					"exit_insert_mode",
+					null
+				]
+			]
+		},
+		"command": "sequence"
+	},
+	{
+		"args":
+		{
+			"action_args": null,
+			"action_command": null,
+			"motion_args":
+			{
+				"extend": true,
+				"repeat": 1.0
+			},
+			"motion_clip_to_line": true,
+			"motion_command": "vi_move_to_hard_eol",
+			"motion_inclusive": true,
+			"motion_mode": 0.0
+		},
+		"command": "vi_eval"
+	},
+	{
+		"args":
+		{
+			"characters": " %"
+		},
+		"command": "insert"
+	},
+	{
+		"args": null,
+		"command": "paste"
+	}
+]

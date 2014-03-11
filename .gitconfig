@@ -1,0 +1,20 @@
+[push]
+	default = simple
+[color]
+	ui = true
+[user]
+	email = krammandrea@gmail.com
+	name = Andrea Kramm
+
+[merge]
+	tool=diffmerge
+
+[mergetool "diffmerge"]
+	cmd=diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+	trustexitcode=false
+
+[diff]
+	tool = diffmerge
+
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"

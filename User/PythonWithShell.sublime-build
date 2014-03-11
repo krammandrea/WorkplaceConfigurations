@@ -1,0 +1,9 @@
+{
+	
+    "cmd": ["python", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python",
+    "env": {
+    	"AWS_ACCESS_KEY_ID":"yourId",
+		"AWS_SECRET_ACCESS_KEY":"yourKey"}
+}
